@@ -15,10 +15,8 @@ form.on("submit", filterData);
 
 //loop through data
 data.forEach(function(UFOdata){
-    //console.log(UFOdata);
     var row = tbody.append("tr");
     Object.entries(UFOdata).forEach(function([key, value]) {
-    //console.log(key, value);
     //Append a cell to the row for each value
     // in the UFO data object
     var cell = row.append("td");
@@ -48,10 +46,8 @@ function filterData() {
     //populate back to full when no value is filtered
     if (inputValue == "") {
         data.forEach(function(UFOdata){
-            //console.log(UFOdata);
             var row = tbody.append("tr");
             Object.entries(UFOdata).forEach(function([key, value]) {
-            //console.log(key, value);
             //Append a cell to the row for each value
             // in the UFO data object
             var cell = row.append("td");
@@ -62,10 +58,8 @@ function filterData() {
     else{
     //add new filtered data
     filter.forEach(function(UFOdata){
-        //console.log(UFOdata);
         var row = tbody.append("tr");
         Object.entries(UFOdata).forEach(function([key, value]) {
-        //console.log(key, value);
         //Append a cell to the row for each value
         // in the UFO data object
         var cell = row.append("td");
